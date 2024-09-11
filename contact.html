@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7cc056dfea.js" crossorigin="anonymous"></script>
+    <!-- font open sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- font Marcellus  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="about.css">
+
+    <title>Contact - Be Bold</title>
+  </head>
+  <body>
+
+  <!-- header  -->
+
+  <header class="header-wrap sticky-top"  >
+    <nav class="navbar navbar-expand-lg " id="contactheader" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./Images/logo-regular.png" alt="Be Bold" class="img-fluid">
+        </a>
+          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav menu ">
+              <li class="nav-item text-left text-uppercase">
+                <a class="nav-link active hover-line" aria-current="page" href="shopall.html">Shop All</a>
+              </li>
+              <li class="nav-item text-left text-uppercase">
+                <a class="nav-link hover-line" href="makeup.html">Makeup</a>
+              </li>
+              <li class="nav-item text-left text-uppercase">
+                <a class="nav-link hover-line" href="skincare.html">Skin care</a>
+              </li>
+              <li class="nav-item text-left text-uppercase">
+                <a class="nav-link hover-line" href="haircare.html">Hair care</a>
+              </li>
+              <li class="nav-item text-left text-uppercase">
+                <a class="nav-link hover-line" href="about.html">About</a>
+              </li>
+              <li class="nav-item text-left text-uppercase">
+                <a class="nav-link hover-line" href="contact.html">Contact</a>
+              </li>
+              </ul>
+            <ul class="navbar-nav menu1 d-flex ">
+                <li class="nav-item text-left text-uppercase">
+                     <a class="nav-link " href="login.html"><i class="fa-solid fa-user"></i>
+                    </a></li>
+                <li class="nav-item text-left text-uppercase">  <a class="nav-link" href="cart.html">
+                    <span>$59.00</span>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <span class="cart1 text-center" id="cart1">1</span>
+                </a></li>
+            </ul>
+        </div>
+        </div>
+      </nav>
+</header>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const menu = document.querySelector(".menu");
+  const menu1 = document.querySelector(".menu1");
+
+  navbarToggler.addEventListener("click", function () {
+    menu.classList.toggle("left-align");
+    menu1.classList.toggle("hide");
+  });
+});
+</script>
+
+
+<!-- header end  -->
+  
+   <!-- hero section  -->
+  <section>
+    <div class="contact-hero">
+        <div class="container-fluid bg-img ">
+            <div class="container">
+              <div class="row ">
+              
+                     <div class="col-lg-6 hero-txt text-light ">
+              
+                              <h6 >GET IN TOUCH</h6>
+                              <h1 >Message Us</h1>
+                              
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+ <!-- hero section end -->
+
+
+ <!-- main form start  -->
+
+ <section class="main-wrappper">
+
+  <div class="container-fluid">
+    <div class="row justify-content-evenly">
+      <div class="col-md-5 main-text">
+        <div class="container">
+          <h2>
+            Contact Us
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Ut id leo tempor, congue justo at, <br> lobortis orci.
+          </p>
+          <a href="#" class="text-decoration-none text-dark">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>
+              123 Fifth Avenue, New York, NY 10160
+            </span>
+          </a>
+          <br>
+          <a href="#" class="text-decoration-none text-dark">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              contact@info.com
+            </span>
+          </a>
+          <br>
+          <a href="#" class="text-decoration-none text-dark">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              9-334-7565-9787
+            </span>
+          </a>
+        </div>
+        
+      </div >
+      
+        <div class="col-md-5 main-text1">
+        
+          <div class="container">
+            <div class="form h-100">
+        
+              <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                <div class="row">
+                  <div class="col-md-6 form-group mb-5">
+                    <label for="" class="col-form-label">Name <span class="red">*</span></label>
+                    <input type="text" class="form-control" name="name" id="name" >
+                  </div>
+                  <div class="col-md-6 form-group mb-5">
+                    <label for="" class="col-form-label">Email <span class="red">*</span></label>
+                    <input type="text" class="form-control" name="email" id="email"  >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 form-group mb-5">
+                    <label for="" class="col-form-label">Phone <span class="red">*</span></label>
+                    <input type="text" class="form-control" name="phone" id="phone"  >
+                  </div>
+                  <div class="col-md-6 form-group mb-5">
+                    <label for="" class="col-form-label">Company</label>
+                    <input type="text" class="form-control" name="company" id="company"  >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group mb-5">
+                    <label for="message" class="col-form-label">Message <span class="red">*</span></label>
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="4" style="height: 121px;" ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="submit" value="Send" class="btn btn-dark rounded-0 py-2 px-4" id="formbtn">
+                    <span class="submitting"></span>
+                  </div>
+                </div>
+              </form>
+              <div id="form-message-warning mt-4"></div>
+              <div id="form-message-success">
+                Your message was sent, thank you!
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+
+
+ </section>
+
+  <!-- main form end  -->
+
+  <!-- map section start  -->
+  <section class="locationwrap mt-3">
+    <div class="container-fluid">
+      <div class="row">
+
+      </div>
+      <div class="col-12 location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d317893.9737282887!2d-0.11951900000000001!3d51.503186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1709331671814!5m2!1sen!2sus" width="100.1%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+   <!-- map section end  -->
+
+
+   <!-- footer -->
+
+<div class="search-text" id="conatact-footer"> 
+  <div class="container">
+    <div class="row text-center">
+    
+      <div class="form">
+          <h4 id="h4">SUBSCRIBE TO OUR NEWSLETTER</h4>
+           <form id="search-form" class="form-search form-horizontal">
+               <input type="text" class="input-search" placeholder="Enter Email Address...">
+               <button type="submit" class="btn-search">SUBSCRIBE</button>
+           </form>
+       </div>
+   
+     </div>         
+  </div>     
+</div>
+
+<footer>
+<div class="container">
+  <div class="row">
+           <div class="col-md-3 col-sm-6 col-xs-12">
+             <span class="logo"><a href="index.html"><img src="./Images/logo-regular.png" alt=""></a></span>
+           </div>
+           
+           <div class="col-md-3 col-sm-6 col-xs-12">
+               <ul class="menu text-left">
+                    <span>Menu</span>    
+                    <li>
+                       <a href="shopall.html">Shop All</a>
+                     </li>
+                          
+                     <li>
+                        <a href="makeup.html">Makeup</a>
+                     </li>
+                          
+                     <li>
+                       <a href="skincare.html">Skin Care</a>
+                     </li>
+                          
+                     <li>
+                        <a href="haircare.html">Hair care</a>
+                     </li>
+                     <li>
+                      <a href="about.html">About</a>
+                   </li>
+                   <li>
+                    <a href="contact.html">Contact</a>
+                 </li>
+                </ul>
+           </div>
+      
+           <div class="col-md-3 col-sm-6 col-xs-12">
+             <ul class="address text-left">
+               <span>Contact</span>       
+               <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i> 
+                  <a href="#">Phone</a>
+               </li>
+               <li>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                  <a href="#">Adress</a>
+               </li> 
+               <li>
+                  <i class="fa fa-envelope" aria-hidden="true"></i> 
+                  <a href="#">Email</a>
+               </li> 
+              </ul>
+           </div>
+           <div class="col-md-3 col-sm-6 col-xs-12 sociali">
+            
+              <h3 class="text-center" id="social">Scoial Media</h3>
+                  <hr>
+                      <div class="text-center center-block">
+                          <p class="txt-railway">- Join Us -</p>
+                          <br />
+                              <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+              </div>
+                  
+              
+           </div>
+       </div> 
+   </div>
+</footer>
+
+<section class="footerbottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © 2024 Be Bold | Powered by Be Bold</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer ends  -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7cc056dfea.js" crossorigin="anonymous"></script>
+    <!-- font open sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- font Marcellus  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="about.css">
+        <title>About - Be Bold</title>
+  </head>
+  <body>
+     <!-- header  -->
+
+     <header class="header-wrap sticky-top" id="login">
+      <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="./Images/logo-regular.png" alt="Be Bold" class="img-fluid">
+          </a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav menu ">
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link active hover-line" aria-current="page" href="shopall.html">Shop All</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="makeup.html">Makeup</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="skincare.html">Skin care</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="haircare.html">Hair care</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="about.html">About</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="contact.html">Contact</a>
+                </li>
+                </ul>
+              <ul class="navbar-nav menu1 d-flex ">
+                  <li class="nav-item text-left text-uppercase">
+                       <a class="nav-link " href="login.html"><i class="fa-solid fa-user"></i>
+                      </a></li>
+                  <li class="nav-item text-left text-uppercase">  <a class="nav-link" href="cart.html">
+                      <span>$59.00</span>
+                      <i class="fa-solid fa-cart-shopping cart"></i>
+                      <span class="cart1 text-center" id="cart1">1</span>
+                  </a></li>
+              </ul>
+          </div>
+          </div>
+        </nav>
+  </header>
+
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const menu = document.querySelector(".menu");
+    const menu1 = document.querySelector(".menu1");
+  
+    navbarToggler.addEventListener("click", function () {
+      menu.classList.toggle("left-align");
+      menu1.classList.toggle("hide");
+    });
+  });
+ </script>
+
+
+  <!-- header end  -->
+
+      <!-- hero section  -->
+  <section>
+    <div class="contact-hero" >
+        <div class="container-fluid bg-img " id="abouthero">
+            <div class="container">
+              <div class="row ">
+              
+                     <div class="col-lg-6 hero-txt text-light ">
+              
+                              <h6 >A FEW WORDS</h6>
+                              <h1 >About Us</h1>
+                              
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+ <!-- hero section end -->
+
+ 
+
+ <!-- below hero section starts  -->
+
+ <section class="belowhero">
+
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-5 belowleft">
+                <h2>
+                    Lorem ipsum dolor sit
+                </h2>
+                <h2>
+                    amet, consectetur
+                </h2>
+                <h2>
+                    adipiscing elit.
+                </h2>
+                <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h5>
+                <span>________</span>
+            </div>
+            <div class="col-md-5 belowright">
+                <h4>Cras ut ultricies risus. Etiam ac malesuada</h4>
+                <h4>lectus. Sed congue nisi vitae lorem</h4>
+                <h4>ullamcorper laoreet. In eget tellus mauris.</h4>
+                <h4>
+                    Phasellus id ligula.
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <br> rhoncus eget enim eget tincidunt. In finibus nisi ex, eu <br> interdum urna euismod sit amet. Morbi sollicitudin in magna <br> sed tristique. Nulla pharetra sapien eros, sit amet bibendum <br> nibh consectetur quis. Curabitur tortor dolor, fringilla eu <br> fringilla id, dignissim in urna. </p>
+
+                <p>
+                    Morbi sollicitudin in magna sed tristique. Nulla pharetra  <br> eros, sit amet bibendum nibh consectetur quis. Curabitur <br> tortor dolor, fringilla eu fringilla id.
+                </p>
+            </div>
+        </div>
+    </div>
+
+ </section>
+
+<!-- below hero section ends  -->
+
+<!-- about product section  -->
+
+<section class="aboutproduct">
+
+    <div class="container bg-img">
+        <div class="row">
+            <div class="col-12 text-center text-light product-txt">
+                <h2>
+                    About Our Products
+                </h2>
+                <span>
+                    ________
+                </span>
+                <h4>
+                    Proin at velit sed elit varius porttitor. Ut a suscipit quam, eu congue odio. Sed <br> eget viverra est. Vivamus ut sodales neque. Sed vel dui et dolor placerat egestas <br>id lacinia mauris
+                </h4>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- about product section end -->
+
+<!-- about owner section start  -->
+
+<section class="ownerwrapper">
+    <div class="container owner">
+        <div class="row">
+            <div class="col-md-6 left">
+                <img src="./aboutimgs/about-01.jpg" alt="">
+            </div>
+            <div class="col-md-6 right text-end">
+                <h6>
+                    ABOUT ME
+                </h6>
+                <h2>
+                    Hi, I'm Diana!
+                </h2>
+                <h4>
+                    I'm a 32 years old women entrepreneur, <br> living in Miami, Florida
+                </h4>
+                
+                <span>
+                    ________
+                </span>
+                <p>
+                    Sed ut fringilla dolor. Morbi suscipit a nunc eu finibus. Nam <br> rutrum mattis velit eget volutpat. Fusce egestas mi urna, id <br> pulvinar ipsum dictum eget. Mauris in dolor velit. Vestibulum <br> finibus felis non massa commodo molestie at id justo. Quisque <br>sollicitudin elit sit amet facilisis euismod. Fusce at arcu sed. 
+                </p>
+                <p>
+                    Nam rutrum mattis velit eget volutpat. Fusce egestas mi urna, <br> id pulvinar ipsum dictum eget.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- about owner section start  -->
+
+
+<!-- why chooose us  -->
+<section class="why-wrapper">
+    <div class="container-fluid">
+      <div class="row mt-5 whyus">
+        <div class="col-12">
+          <h6 class="text-center">WHY CHOOSE US</h6>
+          <div class="text-center line1">________</div>
+        </div>
+      </div>
+      <div class="row services justify-content-around">
+        <div class="col-md-3 ">
+          <span class="span1"><i  class="fas fa-shipping-fast text-center" ></i></span>
+          <span class="span2">Fast Delivery</span>
+          <p class="text-left">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Ut elit tellus, luctus nec ullamcorper mattis.</p>
+        </div>
+        <div class="col-md-3">
+          <span class="span1"><i class="fas fa-dolly text-center"></i></span>
+          <span class="span2">Free Shipping</span>
+          <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Ut elit tellus, luctus nec ullamcorper mattis.</p>
+        </div>
+        <div class="col-md-3">
+          <span class="span1" id="arrow"><i class="bi bi-send-arrow-down fas text-center"></i></span>
+          <span class="span2">Easy Returns</span>
+          <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Ut elit tellus, luctus nec ullamcorper mattis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- why chooose end  -->
+
+<!-- footer start  -->
+<div class="search-text" id="login-foot"> 
+    <div class="container">
+      <div class="row text-center">
+      
+        <div class="form">
+            <h4 id="h4">SUBSCRIBE TO OUR NEWSLETTER</h4>
+             <form id="search-form" class="form-search form-horizontal">
+                 <input type="text" class="input-search" placeholder="Enter Email Address...">
+                 <button type="submit" class="btn-search">SUBSCRIBE</button>
+             </form>
+         </div>
+     
+       </div>         
+    </div>     
+  </div>
+  
+  <footer>
+  <div class="container">
+    <div class="row">
+             <div class="col-md-3 col-sm-6 col-xs-12">
+               <span class="logo"><a href="index.html"><img src="./Images/logo-regular.png" alt="logo"></a></span>
+             </div>
+             
+             <div class="col-md-3 col-sm-6 col-xs-12">
+                 <ul class="menu text-left">
+                      <span>Menu</span>    
+                      <li>
+                         <a href="shopall.html">Shop All</a>
+                       </li>
+                            
+                       <li>
+                          <a href="makeup.html">Makeup</a>
+                       </li>
+                            
+                       <li>
+                         <a href="skincare.html">Skin Care</a>
+                       </li>
+                            
+                       <li>
+                          <a href="haircare.html">Hair care</a>
+                       </li>
+                       <li>
+                        <a href="about.html">About</a>
+                     </li>
+                     <li>
+                      <a href="contact.html">Contact</a>
+                   </li>
+                  </ul>
+             </div>
+        
+             <div class="col-md-3 col-sm-6 col-xs-12">
+               <ul class="address text-left">
+                 <span>Contact</span>       
+                 <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i> 
+                    <a href="#">Phone</a>
+                 </li>
+                 <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                    <a href="#">Adress</a>
+                 </li> 
+                 <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> 
+                    <a href="#">Email</a>
+                 </li> 
+                </ul>
+             </div>
+             <div class="col-md-3 col-sm-6 col-xs-12 sociali">
+              
+                <h3 class="text-center" id="social">Scoial Media</h3>
+                    <hr>
+                        <div class="text-center center-block">
+                            <p class="txt-railway">- Join Us -</p>
+                            <br />
+                                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                              <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                              <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                              <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+                    
+                
+             </div>
+         </div> 
+     </div>
+  </footer>
+  
+  <section class="footerbottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © 2024 Be Bold | Powered by Be Bold</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- footer end -->
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

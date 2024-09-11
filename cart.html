@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font Awesome cdn  -->
+    <script src="https://kit.fontawesome.com/7cc056dfea.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap icons cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- font open sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- font Marcellus  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cart.css">
+
+    <title>Login - Be Bold</title>
+  </head>
+  <body>
+    
+
+     <!-- header  -->
+
+     <header class="header-wrap sticky-top" id="login">
+      <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="./Images/logo-regular.png" alt="Be Bold" class="img-fluid">
+          </a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav menu ">
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link active hover-line" aria-current="page" href="shopall.html">Shop All</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="makeup.html">Makeup</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="skincare.html">Skin care</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="haircare.html">Hair care</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="about.html">About</a>
+                </li>
+                <li class="nav-item text-left text-uppercase">
+                  <a class="nav-link hover-line" href="contact.html">Contact</a>
+                </li>
+                </ul>
+              <ul class="navbar-nav menu1 d-flex ">
+                  <li class="nav-item text-left text-uppercase">
+                       <a class="nav-link " href="login.html"><i class="fa-solid fa-user"></i>
+                      </a></li>
+                  <li class="nav-item text-left text-uppercase">  <a class="nav-link" href="cart.html">
+                      <span>$59.00</span>
+                      <i class="fa-solid fa-cart-shopping cart"></i>
+                      <span class="cart1 text-center">1</span>
+                  </a></li>
+              </ul>
+          </div>
+          </div>
+        </nav>
+  </header>
+
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const menu = document.querySelector(".menu");
+    const menu1 = document.querySelector(".menu1");
+  
+    navbarToggler.addEventListener("click", function () {
+      menu.classList.toggle("left-align");
+      menu1.classList.toggle("hide");
+    });
+  });
+ </script>
+
+
+  <!-- header end  -->
+
+   <!-- hero login start  -->
+
+   <section class="hero-login">
+    <div class="container-fluid">
+        <div class="row justify-content-center ">
+            <div class="col-12 text-center">
+                <h1>
+                    YOUR SHOPPING CART
+                </h1>
+                <div aria-label="breadcrumb" class="d-flex justify-content-center" >
+                    <ol class="breadcrumb ">
+                      <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-dark cc">Home</a></li>
+                      <li class="breadcrumb-item active text-dark text-center" aria-current="page">YOUR SHOPPING CART</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- hero login end -->
+
+<!-- cart section start  -->
+
+<!-- <section class="h-100 h-custom " style="background-color: rgb(246,237,240);">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-8">
+                  <div class="p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                      <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                      <h6 class="mb-0 text-muted">3 items</h6>
+                    </div>
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="./Images/trending-img/product-04-a-300x366.jpg"
+                          class="img-fluid rounded-3" alt="Cotton T-shirt">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Skin Care</h6>
+                        <h6 class="text-black mb-0">Product 1</h6>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0">$ 59.00</h6>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                      </div>
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="./haircare/product-14-a-300x366.jpg"
+                          class="img-fluid rounded-3" alt="Cotton T-shirt">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Hair Care</h6>
+                        <h6 class="text-black mb-0">Product 2</h6>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0">$ 59.00</h6>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                      </div>
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="./makeup/product-06-a-300x366.jpg"
+                          class="img-fluid rounded-3" alt="Cotton T-shirt">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Makeup</h6>
+                        <h6 class="text-black mb-0">Product 3</h6>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0">$ 44.00</h6>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                      </div>
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="pt-5">
+                      <h6 class="mb-0"><a href="#!" class="text-body"><i
+                            class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 bg-grey">
+                  <div class="p-5">
+                    <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                    <hr class="my-4">
+  
+                    <div class="d-flex justify-content-between mb-4">
+                      <h5 class="text-uppercase">items 3</h5>
+                      <h5>$ 162.00</h5>
+                    </div>
+  
+                    <h5 class="text-uppercase mb-3">Shipping</h5>
+  
+                    <div class="mb-4 pb-2">
+                      <select class="select">
+                        <option value="1">Standard-Delivery- $5.00</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                      </select>
+                    </div>
+  
+                    <h5 class="text-uppercase mb-3">Give code</h5>
+  
+                    <div class="mb-5">
+                      <div class="form-outline">
+                        <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea2">Enter your code</label>
+                      </div>
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="d-flex justify-content-between mb-5">
+                      <h5 class="text-uppercase">Total price</h5>
+                      <h5>$ 167.00</h5>
+                    </div>
+  
+                    <button type="button" class="btn btn-dark btn-block btn-lg"
+                      data-mdb-ripple-color="dark">Register</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="h-100 h-custom " id="cartwrap">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+  
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="h5">Shopping Cart</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex align-items-center">
+                      <img src="./Images/trending-img/product-04-a-300x366.jpg" class="img-fluid rounded-3"
+                        style="width: 120px;" alt="Book">
+                      <div class="flex-column ms-4">
+                        <p class="mb-2">Product 1</p>
+                        <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle">
+                    <p class="mb-0" style="font-weight: 500;">Skin Care</p>
+                  </td>
+                  <td class="align-middle">
+                    <div class="d-flex flex-row">
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                        <i class="fas fa-minus"></i>
+                      </button>
+  
+                      <input id="form1" min="0" name="quantity" value="2" type="number"
+                        class="form-control form-control-sm" style="width: 50px;" />
+  
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="align-middle">
+                    <p class="mb-0" style="font-weight: 500;">$59.00</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="border-bottom-0">
+                    <div class="d-flex align-items-center">
+                      <img src="./haircare/product-19-a-300x366.jpg" class="img-fluid rounded-3"
+                        style="width: 120px;" alt="Book">
+                      <div class="flex-column ms-4">
+                        <p class="mb-2">Product 2</p>
+                        <p class="mb-0">Yuval Noah Harari</p>
+                      </div>
+                    </div>
+                  </th>
+                  <td class="align-middle border-bottom-0">
+                    <p class="mb-0" style="font-weight: 500;">Hair Care</p>
+                  </td>
+                  <td class="align-middle border-bottom-0">
+                    <div class="d-flex flex-row">
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                        <i class="fas fa-minus"></i>
+                      </button>
+  
+                      <input id="form1" min="0" name="quantity" value="1" type="number"
+                        class="form-control form-control-sm" style="width: 50px;" />
+  
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </td>
+                  <td class="align-middle border-bottom-0">
+                    <p class="mb-0" style="font-weight: 500;">$59.00</p>
+                  </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                      <div class="d-flex align-items-center">
+                        <img src="./makeup/product-07-a-300x366.jpg" class="img-fluid rounded-3"
+                          style="width: 120px;" alt="Book">
+                        <div class="flex-column ms-4">
+                          <p class="mb-2">Product 3</p>
+                          <p class="mb-0">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                    </th>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500;">Makeup</p>
+                    </td>
+                    <td class="align-middle">
+                      <div class="d-flex flex-row">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+    
+                        <input id="form1" min="0" name="quantity" value="2" type="number"
+                          class="form-control form-control-sm" style="width: 50px;" />
+    
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="align-middle">
+                      <p class="mb-0" style="font-weight: 500;">$44.00</p>
+                    </td>
+                  </tr>
+                  <tr>
+              </tbody>
+            </table>
+          </div>
+  
+          <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
+            <div class="card-body p-4">
+  
+              <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
+                  <form>
+                    <div class="d-flex flex-row pb-3">
+                      <div class="d-flex align-items-center pe-2">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1v"
+                          value="" aria-label="..." checked />
+                      </div>
+                      <div class="rounded border w-100 p-3">
+                        <p class="d-flex align-items-center mb-0">
+                          <i class="fab fa-cc-mastercard fa-2x text-dark pe-2"></i>Credit
+                          Card
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row pb-3">
+                      <div class="d-flex align-items-center pe-2">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel2v"
+                          value="" aria-label="..." />
+                      </div>
+                      <div class="rounded border w-100 p-3">
+                        <p class="d-flex align-items-center mb-0">
+                          <i class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"></i>Debit Card
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                      <div class="d-flex align-items-center pe-2">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel3v"
+                          value="" aria-label="..." />
+                      </div>
+                      <div class="rounded border w-100 p-3">
+                        <p class="d-flex align-items-center mb-0">
+                          <i class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2"></i>PayPal
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-6">
+                  <div class="row">
+                    <div class="col-12 col-xl-6">
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                          placeholder="John Smith" />
+                        <label class="form-label" for="typeName">Name on card</label>
+                      </div>
+  
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY"
+                          size="7" id="exp" minlength="7" maxlength="7" />
+                        <label class="form-label" for="typeExp">Expiration</label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                          placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
+                        <label class="form-label" for="typeText">Card Number</label>
+                      </div>
+  
+                      <div class="form-outline mb-4 mb-xl-5">
+                        <input type="password" id="typeText" class="form-control form-control-lg"
+                          placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                        <label class="form-label" for="typeText">Cvv</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                  <div class="d-flex justify-content-between" style="font-weight: 500;">
+                    <p class="mb-2">Subtotal</p>
+                    <p class="mb-2">$162.00</p>
+                  </div>
+  
+                  <div class="d-flex justify-content-between" style="font-weight: 500;">
+                    <p class="mb-0">Shipping</p>
+                    <p class="mb-0">$2.99</p>
+                  </div>
+  
+                  <hr class="my-4">
+  
+                  <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
+                    <p class="mb-2">Total (tax included)</p>
+                    <p class="mb-2">$164.99</p>
+                  </div>
+  
+                  <button type="button" class="btn btn-dark btn-block btn-lg" id="bt1">
+                    <div class="d-flex justify-content-between">
+                      <span>Checkout</span>
+                      <span>$164.99</span>
+                    </div>
+                  </button>
+  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  <br> <br> <br> <br> <br>
+<!-- cart section end  -->
+
+<!-- footer start  -->
+<div class="search-text " id="login-foot"> 
+    <div class="container">
+      <div class="row text-center">
+      
+        <div class="form">
+            <h4 id="h4">SUBSCRIBE TO OUR NEWSLETTER</h4>
+             <form id="search-form" class="form-search form-horizontal">
+                 <input type="text" class="input-search" placeholder="Enter Email Address...">
+                 <button type="submit" class="btn-search">SUBSCRIBE</button>
+             </form>
+         </div>
+     
+       </div>         
+    </div>     
+  </div>
+  
+  <footer>
+  <div class="container">
+    <div class="row">
+             <div class="col-md-3 col-sm-6 col-xs-12">
+               <span class="logo"><a href="index.html"><img src="./Images/logo-regular.png" alt="logo"></a></span>
+             </div>
+             
+             <div class="col-md-3 col-sm-6 col-xs-12">
+                 <ul class="menu text-left">
+                      <span>Menu</span>    
+                      <li>
+                         <a href="shopall.html">Shop All</a>
+                       </li>
+                            
+                       <li>
+                          <a href="makeup.html">Makeup</a>
+                       </li>
+                            
+                       <li>
+                         <a href="skincare.html">Skin Care</a>
+                       </li>
+                            
+                       <li>
+                          <a href="haircare.html">Hair care</a>
+                       </li>
+                       <li>
+                        <a href="about.html">About</a>
+                     </li>
+                     <li>
+                      <a href="contact.html">Contact</a>
+                   </li>
+                  </ul>
+             </div>
+        
+             <div class="col-md-3 col-sm-6 col-xs-12">
+               <ul class="address text-left">
+                 <span>Contact</span>       
+                 <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i> 
+                    <a href="#">Phone</a>
+                 </li>
+                 <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                    <a href="#">Adress</a>
+                 </li> 
+                 <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> 
+                    <a href="#">Email</a>
+                 </li> 
+                </ul>
+             </div>
+             <div class="col-md-3 col-sm-6 col-xs-12 sociali">
+              
+                <h3 class="text-center" id="social">Scoial Media</h3>
+                    <hr>
+                        <div class="text-center center-block">
+                            <p class="txt-railway">- Join Us -</p>
+                            <br />
+                                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                              <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                              <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                              <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+                    
+                
+             </div>
+         </div> 
+     </div>
+  </footer>
+  
+  <section class="footerbottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © 2024 Be Bold | Powered by Be Bold</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- footer end -->
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
